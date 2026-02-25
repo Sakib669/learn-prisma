@@ -1,8 +1,10 @@
 import { Router } from "express";
-import { store } from "../controllers/MovieControllers.js";
+import { index, store, update } from "../controllers/MovieControllers.js";
 
 const router = Router();
 
 router.post("/", store);
+router.get("/", index);
+router.patch("/:id", update);
 
 export default router;
