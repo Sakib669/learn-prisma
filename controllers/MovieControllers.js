@@ -94,8 +94,12 @@ export const search = async (req, res) => {
     where: {
       name: {
         contains: query,
+        mode: "insensitive"
       },
     },
+    select: {
+      name: true,
+    }
   });
 
   return res.json({ status: 200, movies });
