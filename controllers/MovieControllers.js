@@ -1,4 +1,4 @@
-import prisma from "../DB/db.config";
+import prisma from "../DB/db.config.js";
 
 export const store = async (req, res) => {
   const { name } = req.body;

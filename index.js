@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 3001;
 
 app.get("/", (req, res) => {
   return res.send("hey i'm working....");
