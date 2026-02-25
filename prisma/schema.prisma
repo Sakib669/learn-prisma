@@ -21,4 +21,4 @@ model Cast {
   description String
   movieId     String @db.ObjectId
   movie       Movie  @relation(fields: [movieId], references: [id])
-}
+ }

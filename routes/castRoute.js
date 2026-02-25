@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { destroy, index, store, update } from "../controllers/MovieControllers.js";
+import { destroy, index, store, update } from "../controllers/CastControllers.js";
 
 const router = Router();
 
